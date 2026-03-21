@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Training artifacts
+src/results/**
+*.ckpt
+*.pt
+*.pth
+*.onnx
+
+# Dataset (download separately, do not track)
+src/data/tiff/**
+src/data/png/**
+src/data/raw/**
+src/data/external/**
+*.zip
+*.tar
+*.tar.gz
+*.7z
