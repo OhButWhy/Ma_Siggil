@@ -1,0 +1,20 @@
+[flake8]
+max-line-length = 120
+extend-ignore = E203, W503, E501, W293
+exclude = 
+    .git,
+    __pycache__,
+    .venv,
+    venv,
+    */migrations/*,
+    .pytest_cache,
+    .eggs,
+    *.egg-info,
+    build,
+    dist
+per-file-ignores =
+    __init__.py:F401
+    scripts/train.py:E402
+    scripts/cont_train.py:E402
+    scripts/test.py:E402
+    scripts/val.py:E402
